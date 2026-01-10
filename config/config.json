@@ -1,0 +1,22 @@
+{
+  "model": {
+    "name": "Fake News Detection Model",
+    "version": "1.0.0",
+    "type": "text_classification"
+  },
+  "training": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "max_features": 5000,
+    "max_len": 100
+  },
+  "app": {
+    "debug": false,
+    "port": 5000,
+    "host": "0.0.0.0"
+  },
+  "data": {
+    "train_path": "data/train.csv",
+    "test_path": "data/test.csv"
+  }
+}
